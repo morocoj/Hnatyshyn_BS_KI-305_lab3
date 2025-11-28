@@ -4,15 +4,14 @@ import java.io.FileNotFoundException;
 
 public class LaptopApp {
     public static void main(String[] args) throws FileNotFoundException {
-        // Створюємо ноутбук (як нащадок Computer)
+        // Створюємо ноутбук
         Laptop myLaptop = new Laptop("Apple M2", 3.5, 16, 512, 1.4);
 
-        // Використовуємо методи ноутбука
+        // Тестуємо методи
         myLaptop.openLid();
-        myLaptop.turnOn(); // Метод успадкований від Computer
+        myLaptop.turnOn();
         myLaptop.checkBattery();
 
-        // Використовуємо метод інтерфейсу
         myLaptop.closeLid();
         myLaptop.carry("Університет");
 
